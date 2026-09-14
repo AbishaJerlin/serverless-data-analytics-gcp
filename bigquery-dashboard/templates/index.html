@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>COMM034 B5 - Cloud Run</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 28px; }
+    .box { max-width: 980px; }
+    a { margin-right: 12px; }
+    table { border-collapse: collapse; margin-top: 16px; width: 100%; }
+    th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+    th { background: #f3f3f3; }
+    .pill { display: inline-block; padding: 6px 10px; background: #eef; border-radius: 10px; margin-left: 8px; }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>COMM034 — B5 Cloud Run Web Service</h2>
+    <p>
+      Choose a query:
+      <a href="/?q=country">Country Revenue</a>
+      <a href="/?q=monthly">Monthly Revenue</a>
+      <span class="pill">Current: {{ selected }}</span>
+    </p>
+
+    <h3>{{ title }}</h3>
+
+    {% if data and data|length > 0 %}
+      <table>
+        <thead>
+          <tr>
+            {% for k in data[0].keys() %}
+              <th>{{ k }}</th>
+            {% endfor %}
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in data %}
+            <tr>
+              {% for v in row.values() %}
+                <td>{{ v }}</td>
+              {% endfor %}
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      <p>No data returned.</p>
+    {% endif %}
+  </div>
+</body>
+</html>
