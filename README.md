@@ -54,7 +54,9 @@ serverless-data-analytics-gcp/
 │   └── templates/
 │       └── index.html
 ├── sample_data/
-│   └── sample.txt
+│   ├── Asample.txt
+│   ├── Bsample.txt
+│   └── Emma.txt
 ├── docs/
 │   └── images/
 ├── .gitignore
@@ -164,7 +166,7 @@ It also showed me why keeping analysis logic separate from the application layer
 
 This repository is a cleaned portfolio version of my university cloud computing project. Coursework documents, submission files, account details, billing information, duplicate screenshots and large text collections are intentionally not included.
 
-The sample text is included only for testing the text analysis functions.
+The sample text files are included for testing the text analysis functions with different file sizes.
 
 ## License
 
