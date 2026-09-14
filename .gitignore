@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment variables and credentials
+.env
+.env.*
+*.json
+!package.json
+!tsconfig.json
+service-account*.json
+credentials*.json
+
+# Google Cloud local files
+.gcloud/
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Coursework/source dump files
+*.docx
+*.pptx
+*.mp4
+*.zip
+
+# Large local datasets/text collections
+SampleTexts/
+data/raw/
