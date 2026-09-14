@@ -122,23 +122,31 @@ docker run -p 8080:8080 bigquery-dashboard
 
 When deploying to Google Cloud, authentication is handled through the permissions given to the Cloud Run service account rather than putting credentials in the source code.
 
-## Example outputs
+## Example Outputs
 
-### Looker Studio sales trend
+### Text Analysis on Cloud Run
 
-![Sales trend dashboard](docs/images/sales-trend-dashboard.jpeg)
+![Text analysis results](docs/images/text-analysis-asample-results.png)
 
-### Revenue by country
+### Multi-file Text Analysis
 
-![Revenue by country dashboard](docs/images/revenue-country-dashboard.jpeg)
+![Multi-file text analysis](docs/images/text-analysis-multi-file-results.png)
 
-### BigQuery results through Cloud Run
+### Looker Studio Sales Trend
 
-![BigQuery Cloud Run interface](docs/images/bigquery-cloudrun-ui.jpeg)
+![Sales trend dashboard](docs/images/sales-trend-dashboard.jpg)
 
-### Cloud Run deployment
+### Revenue by Country
 
-![Cloud Run deployment](docs/images/cloud-run-deployment.jpeg)
+![Revenue by country dashboard](docs/images/revenue-country-dashboard.jpg)
+
+### BigQuery Order Status Analysis
+
+![Order status results](docs/images/bigquery-order-status-results.png)
+
+### BigQuery Revenue by Country
+
+![Country revenue results](docs/images/bigquery-country-revenue-results.png)
 
 ## Cloud architecture
 
